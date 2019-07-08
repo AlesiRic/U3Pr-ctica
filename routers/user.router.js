@@ -8,5 +8,14 @@ module.exports = (wagner) => {
     router.post('/', (req, res) =>
         userCtrl.createUser(req, res));
 
+    router.get('/',(req,res)=>
+        userCtrl.findAll(req,res));
+
+    router.get('/login/:email/:password',(req,res)=>
+        userCtrl.login(req,res));
+
+    router.delete('/:id',(req,res)=>
+        userCtrl.deletByI(req,res));
+
     return router;
 }

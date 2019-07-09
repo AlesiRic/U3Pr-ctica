@@ -29,7 +29,11 @@ app.use(function(req, res, next) {
 const urlBase = "/api/v1/";
 
 const jwtOptions={
-    path:[/^\/api\/v1\/usuarios\/login\/.*/]
+    path:[
+        /^\/api\/v1\/usuarios\/login\/.*/,
+        `${urlBase}usuarios/registrar/`,
+        /^\/api\/v1\/usuarios\/registrar\/.*/
+    ]
 };
 
 app.use(expressJWT({secret:_config.SECRETJWT}).unless(jwtOptions));

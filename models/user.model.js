@@ -13,6 +13,10 @@ let userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
+    },
+    validated:{
+        type:Boolean,
+        required:true
     }
 });
 

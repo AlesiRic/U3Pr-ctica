@@ -7,7 +7,7 @@ const path = require('path');
 const _config=require('./_config');
 const expressJWT=require('express-jwt')
 
-let app = express();
+var app = express();
 
 require('./models/models')(wagner);
 

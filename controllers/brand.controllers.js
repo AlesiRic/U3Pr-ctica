@@ -40,7 +40,6 @@ const findAll=(req,res)=>{
 
 const deleteByI=(req,res)=>{
     const {id}=req.params;
-
     _brand.findByIdAndRemove({_id:id})
         .then((data)=>{        
             res.status(status.OK);

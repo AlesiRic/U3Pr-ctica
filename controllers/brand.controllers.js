@@ -2,7 +2,7 @@ const http = require('http');
 const path = require('path');
 const status=require('http-status');
 
-let _brand;
+var _brand;
 
 const createBrand = (req, res) => {
     const brand = req.body;

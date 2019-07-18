@@ -4,7 +4,7 @@ const status = require('http-status');
 const _config = require('../_config');
 const jwt = require('jsonwebtoken')
 
-let _user;
+var _user;
 
 const createUser = (req, res) => {
     const user = req.body;

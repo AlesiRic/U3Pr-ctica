@@ -19,7 +19,7 @@
     "mongoose": "^5.6.3",
     "path": "^0.12.7",
     "status": "0.0.13",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "wagner-core": "^0.2.0"
   },
   "devDependencies": {
